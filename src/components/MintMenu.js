@@ -36,19 +36,20 @@ const MintMenu = ({ accounts, setAccounts }) => {
 
     return (
         <main>
+            <img src={require('./logo.png')} alt="logo" height="80" ></img>
             <h1 className="title">TestNFT</h1>
             {isConnected ? (
                     <section>
                         <div className="select-number">
                             <button className="round" onClick={handleDecrement}>-</button>
-                            <input type="text" inputmode="numeric" value={mintAmount} onChange={e => setMintAmount(e.target.value)}/>
+                            <input type="text" inputMode="numeric" value={mintAmount} onChange={e => setMintAmount(e.target.value)}/>
                             <button className="round" onClick={handleIncrement}>+</button>
                         </div>
                         <button onClick={mintNFT}>Mint</button>
                     </section>
                 ) : 
                 (
-                    <div className="how">Vous devez etre connecte pour pouvoir mint</div>
+                    <div className="how">Vous devez etre connecté pour pouvoir mint</div>
                 )}
         </main>
     );

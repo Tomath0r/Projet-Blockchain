@@ -21,7 +21,7 @@ const NavBar = ({ accounts, setAccounts }) => {
                     Connect
                 </button>
             )}
-            <a href="test"> The Project ? </a>
+            <a href="https://github.com/Tomath0r/Projet-Blockchain"> The Project ? </a>
         </nav>
     );
 };

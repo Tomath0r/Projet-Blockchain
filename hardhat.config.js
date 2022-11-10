@@ -24,5 +24,5 @@ module.exports = {
   etherscan: {
     apiKey: process.env.REACT_APP_ETHERSCAN_KEY,
   }
-
+  allowUnlimitedContractSize: true
 }

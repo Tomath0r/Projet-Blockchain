@@ -86,7 +86,7 @@ button {
 .select-number {
   display: grid;
   padding: 20px;
-  grid-template-columns: var(--button-size) min-content var(--button-size);
+  grid-template-columns: var(--button-size) 112px var(--button-size);
   column-gap: 20px;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
@@ -107,6 +107,5 @@ button {
 }
 
 input {
-  width: max-content;
-  background-color: var(--background-hover);
+  background-color: #cab5ab21;
 }
