@@ -2,7 +2,7 @@ import {useState} from 'react';
 import { ethers, BigNumber } from 'ethers';
 import TestNFT from '../TestNFT.json';
 
-const TestNFTAddress = '0x5FbDB2315678afecb367f032d93F642f64180aa3';
+const TestNFTAddress = "0x4F0bfCF27D5bEA3948287A87Ddc733E92D687575";
 
 const MintMenu = ({ accounts, setAccounts }) => {
     const [mintAmount, setMintAmount] = useState(1);
@@ -41,14 +41,14 @@ const MintMenu = ({ accounts, setAccounts }) => {
                     <section>
                         <div className="select-number">
                             <button className="round" onClick={handleDecrement}>-</button>
-                            <input type="number" value={mintAmount} onChange={e => setMintAmount(e.target.value)}/>
-                            <button onClick={handleIncrement}>+</button>
+                            <input type="text" inputmode="numeric" value={mintAmount} onChange={e => setMintAmount(e.target.value)}/>
+                            <button className="round" onClick={handleIncrement}>+</button>
                         </div>
                         <button onClick={mintNFT}>Mint</button>
                     </section>
                 ) : 
                 (
-                    <div>Tu dois etre co pour mint</div>
+                    <div className="how">Vous devez etre connecte pour pouvoir mint</div>
                 )}
         </main>
     );

@@ -8,12 +8,14 @@ function App() {
 
   return (
     <div className="App">
-      <NavBar accounts={accounts} setAccounts={setAccounts}/>
+      <div></div>
+      <mark className="title">Projet de NFT en Test Projet de NFT en Test Projet de NFT en Test</mark>
       <div className="clean-center">
         <div></div>
         <MintMenu accounts={accounts} setAccounts={setAccounts}/>
-        <div></div>
+        <NavBar accounts={accounts} setAccounts={setAccounts}/>
       </div>
+      <mark className="title">Authorized Personnel only Authorized Personnel only</mark>
     </div>
   );
 }

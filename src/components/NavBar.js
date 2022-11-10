@@ -15,16 +15,13 @@ const NavBar = ({ accounts, setAccounts }) => {
     }
 
     return (
-        <nav className="navbar">
-            <a href="test"> <img src="../../public/logo.png" alt="work" height="100"/> NFT Marketplace </a>
-            <div>
-                <a href="test"> The Project ? </a>
-                {isConnected ? accounts[0] : (
-                    <button className="test" onClick={connectAccount}>
-                        Connect
-                    </button>
-                )}
-            </div>
+        <nav>
+            {isConnected ? accounts[0] : (
+                <button onClick={connectAccount}>
+                    Connect
+                </button>
+            )}
+            <a href="test"> The Project ? </a>
         </nav>
     );
 };
